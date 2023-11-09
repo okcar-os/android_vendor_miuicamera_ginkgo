@@ -12,7 +12,7 @@
 # See the License for the specific language governing permissions and
 # limitations under the License.
 
-$(call inherit-product, vendor/miuicamera/common/common-vendor.mk)
+$(call inherit-product, vendor/miuicamera_ginkgo/common/common-vendor.mk)
 
 # Notch
 PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
@@ -20,4 +20,4 @@ PRODUCT_SYSTEM_DEFAULT_PROPERTIES += \
 
 # Sepolicy
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += \
-    vendor/miuicamera/sepolicy/private
+    vendor/miuicamera_ginkgo/sepolicy/private

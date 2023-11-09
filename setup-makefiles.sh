@@ -42,8 +42,8 @@ setup_vendor "$MIUICAMERA_COMMON" "$VENDOR" "$ROOT" true
 # Copyright headers and guards
 write_headers "xiaomi"
 sed -i 's|TARGET_DEVICE|BOARD_VENDOR|g' common/Android.mk
-sed -i 's|vendor/miuicamera/|vendor/miuicamera/common|g' $PRODUCTMK
-sed -i 's|device/miuicamera//setup-makefiles.sh|vendor/miuicamera/setup-makefiles.sh|g' $ANDROIDBP $ANDROIDMK $BOARDMK $PRODUCTMK
+sed -i 's|vendor/miuicamera_ginkgo/|vendor/miuicamera_ginkgo/common|g' $PRODUCTMK
+sed -i 's|device/miuicamera//setup-makefiles.sh|vendor/miuicamera_ginkgo/setup-makefiles.sh|g' $ANDROIDBP $ANDROIDMK $BOARDMK $PRODUCTMK
 
 write_makefiles "$MY_DIR"/proprietary-files.txt true
 
